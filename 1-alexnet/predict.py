@@ -6,6 +6,8 @@ from PIL import Image
 from torchvision import transforms
 import matplotlib.pyplot as plt
 
+from torchvision.datasets import MNIST
+
 from model import AlexNet
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
